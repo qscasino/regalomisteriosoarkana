@@ -915,16 +915,6 @@
     window.addEventListener('load', () => {
       checkIfPlayedToday();
     });
-
-    // Reset con tecla R (solo para pruebas)
-    document.addEventListener('keydown', (e) => {
-      if (e.key.toLowerCase() === 'r') {
-        if (confirm('¿Reiniciar el juego? (solo pruebas)')) {
-          localStorage.removeItem(STORAGE_KEY);
-          location.reload();
-        }
-      }
-    });
   </script>
 </body>
 </html>
